@@ -22,5 +22,12 @@
     "likes": 36,
     "liked": false,
     "comments": []
+  },
+  {
+    "username": "Logan",
+    "caption": "The world is great",
+    "likes": 0,
+    "liked": false,
+    "comments": []
   }
 ]

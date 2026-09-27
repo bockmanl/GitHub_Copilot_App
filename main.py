@@ -69,9 +69,12 @@ def load_posts():
     return loaded_posts
 
 
-def show_posts():
+def show_posts(posts_to_show=None):
+    if posts_to_show is None:
+        posts_to_show = posts
+
     print("\n--- Feed ---")
-    for number, post in enumerate(posts, start=1):
+    for number, post in enumerate(posts_to_show, start=1):
         print(f"{number}. @{post['username']}: {post['caption']}")
         print(f"   {post['likes']} likes | {len(post['comments'])} comments")
     print()
@@ -127,6 +130,25 @@ def create_post():
     print("Your post was added to the feed.")
 
 
+def search_posts():
+    query = input("Search username or caption: ").strip().casefold()
+    if not query:
+        print("Search cannot be empty.")
+        return
+
+    matches = [
+        post
+        for post in posts
+        if query in post["username"].casefold()
+        or query in post["caption"].casefold()
+    ]
+
+    if matches:
+        show_posts(matches)
+    else:
+        print("No posts matched your search.")
+
+
 def main():
     global posts
     posts = load_posts()
@@ -138,7 +160,8 @@ def main():
         print("3. Comment on a post")
         print("4. View a post and its comments")
         print("5. Create a post")
-        print("6. Exit")
+        print("6. Search posts")
+        print("7. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -178,11 +201,14 @@ def main():
             create_post()
 
         elif choice == "6":
+            search_posts()
+
+        elif choice == "7":
             print("Goodbye!")
             break
 
         else:
-            print("Please choose an option from 1 to 6.")
+            print("Please choose an option from 1 to 7.")
 
         print()
 
