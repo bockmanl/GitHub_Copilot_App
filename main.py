@@ -80,6 +80,22 @@ def show_posts(posts_to_show=None):
     print()
 
 
+def show_sorted_posts():
+    print("1. Most likes")
+    print("2. Newest first")
+    choice = input("Choose a sort order: ").strip()
+
+    if choice == "1":
+        sorted_posts = sorted(posts, key=lambda post: post["likes"], reverse=True)
+    elif choice == "2":
+        sorted_posts = list(reversed(posts))
+    else:
+        print("Please choose 1 or 2.")
+        return
+
+    show_posts(sorted_posts)
+
+
 def select_post():
     show_posts()
 
@@ -161,7 +177,8 @@ def main():
         print("4. View a post and its comments")
         print("5. Create a post")
         print("6. Search posts")
-        print("7. Exit")
+        print("7. View sorted feed")
+        print("8. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -204,11 +221,14 @@ def main():
             search_posts()
 
         elif choice == "7":
+            show_sorted_posts()
+
+        elif choice == "8":
             print("Goodbye!")
             break
 
         else:
-            print("Please choose an option from 1 to 7.")
+            print("Please choose an option from 1 to 8.")
 
         print()
 
