@@ -103,6 +103,30 @@ def view_post(post):
         print("No comments yet.")
 
 
+def create_post():
+    username = input("Choose your display name: ").strip()
+    if not username:
+        print("Your display name cannot be empty.")
+        return
+
+    caption = input("Write your post: ").strip()
+    if not caption:
+        print("Your post cannot be empty.")
+        return
+
+    posts.append(
+        {
+            "username": username,
+            "caption": caption,
+            "likes": 0,
+            "liked": False,
+            "comments": [],
+        }
+    )
+    save_posts(posts)
+    print("Your post was added to the feed.")
+
+
 def main():
     global posts
     posts = load_posts()
@@ -113,7 +137,8 @@ def main():
         print("2. Like or unlike a post")
         print("3. Comment on a post")
         print("4. View a post and its comments")
-        print("5. Exit")
+        print("5. Create a post")
+        print("6. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -150,11 +175,14 @@ def main():
                 view_post(post)
 
         elif choice == "5":
+            create_post()
+
+        elif choice == "6":
             print("Goodbye!")
             break
 
         else:
-            print("Please choose an option from 1 to 5.")
+            print("Please choose an option from 1 to 6.")
 
         print()
 

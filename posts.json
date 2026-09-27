@@ -1,0 +1,26 @@
+[
+  {
+    "username": "jordan",
+    "caption": "Golden hour never gets old.",
+    "likes": 24,
+    "liked": false,
+    "comments": [
+      "mika: Such a beautiful view!",
+      "alex: ✨"
+    ]
+  },
+  {
+    "username": "mika",
+    "caption": "A little fresh air for the weekend.",
+    "likes": 108,
+    "liked": false,
+    "comments": []
+  },
+  {
+    "username": "alex",
+    "caption": "Slow mornings and good coffee.",
+    "likes": 36,
+    "liked": false,
+    "comments": []
+  }
+]
