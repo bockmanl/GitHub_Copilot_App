@@ -2,8 +2,8 @@
   {
     "username": "jordan",
     "caption": "Golden hour never gets old.",
-    "likes": 24,
-    "liked": false,
+    "likes": 25,
+    "liked": true,
     "comments": [
       "mika: Such a beautiful view!",
       "alex: ✨"
@@ -26,8 +26,10 @@
   {
     "username": "Logan",
     "caption": "The world is great",
-    "likes": 0,
-    "liked": false,
-    "comments": []
+    "likes": 1,
+    "liked": true,
+    "comments": [
+      "you: I like this post great work!"
+    ]
   }
 ]
