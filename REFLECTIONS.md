@@ -1,5 +1,5 @@
 ## What did you ask Copilot to help you build? How did you break down the problem?
--I asked Copilot to help me bulid an Instagram like app that displays a social feed and allows users to like and comment on posts. I first started by asking it to bulid me a basic python script that imates the basic features of instagram. From there I asked the AI to help give me more promts to improve my program. In this way I was using AI to help me come up with better prompts to more effectivly use AI. From there I contiuned to ask for one feature at a time using the prompts that I gentrated to help me along the way.
+-I asked Copilot to help me build an Instagram-like app that displays a social feed and allows users to like and comment on posts. I first started by asking it to build me a basic Python script that imitates the basic features of Instagram. From there I asked the AI to help give me more prompts to improve my program. In this way I was using AI to help me come up with better prompts to more effectively use AI. From there I continued to ask for one feature at a time using the prompts that I generated to help me along the way.
 
 ### Project Screenshots
 
@@ -19,13 +19,13 @@
 </table>
 
 ## How did your approach to asking questions change as you worked?
--As i worked I learned that I needed to keep adding more specfic details to the prompt to get excatly what I wanted. Without said details the AI would just fill in the blanks itself and create unexcepted results. OVerall, the more spefic the better.
+-As I worked, I learned that I needed to keep adding more specific details to the prompt to get exactly what I wanted. Without said details, the AI would just fill in the blanks itself and create unexpected results. Overall, the more specific the better.
 
 ## What parts of the development process with GitHub Copilot surprised you?
--To be honesty, the fact that it was so easy and fast suprised me the most. Espcally for basic promgrams, the speed at which Github Copilot can genrate working presentable code is astionshing. Obsouvly the code isn't perfect and for more advance projects it may stuggle, but for simple code it is amazing.
+-To be honest, the fact that it was effortless and fast surprised me the most. Especially for basic programs, the speed at which GitHub Copilot can generate working, presentable code is astonishing. Obviously the code isn't perfect, and for more advanced projects it may struggle, but for simple code it is amazing.
 
 ## What did you learn about the technology you used that you didn't know before?
--I learned how to use the different AI modes more effectivly. Before this assignment, I had no clue that Github Copilot had diffferent modes and after this project I leanred that they are stong effective tools. By using a combantion of the agent, planning, and asking mode you can use the AI more effcinetly to get excatly what you want out of it.
+-I learned how to use the different AI modes more effectively. Before this assignment, I had no clue that GitHub Copilot had different modes, and after this project, I learned that they are strong, effective tools. By using a combination of the agent, planning, and asking mode, you can use the AI more efficiently to get exactly what you want out of it.
 
 ## What would you do differently if you had to build this again?
--If i had to bulid this again I would defently take more advantage of the planing mode of the AI. I used it very little and didn't relise its full power and I think it would've help to streamline my process and create a better scrpit.
+-If I had to build this again, I would definitely take more advantage of the planning mode of the AI. I used it very little and didn't realize its full power, and I think it would've helped to streamline my process and create a better script.
